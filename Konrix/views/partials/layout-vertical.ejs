@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ('./title-meta') %>
+
+    <%- HeaderCss %>
+    <%- include ('./head-css') %>
+</head>
+
+<body>
+
+<div class="flex wrapper">
+
+    <%- include ('./sidenav') %>
+
+    <div class="page-content">
+
+        <%- include ('./topbar') %>
+
+        <main class="flex-grow p-6">
+
+            <%- include ('./page-title') %>
+            <%- body %>
+
+        </main>
+
+        <%- include ('./footer') %>
+
+    </div>
+
+</div>
+
+<%- include ('./customizer') %>
+<%- include ('./footer-scripts') %>
+<%- FooterJs %>
+
+</body>
+</html>
